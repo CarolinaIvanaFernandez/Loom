@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.cabecera {
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;
+    padding: 0 15px;  
+    box-sizing: border-box; 
+}
+
+#contenedoruno {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#logo {
+    max-height: 100%;
+    max-width: 100%;
+    height: 8vh;
+    width: auto;
+}
+
+#login {
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    margin-left: auto;
+}
+
+#contenedordos {
+    display: flex;
+    justify-content: space-evenly; /* Alinea las imágenes con espacio entre ellas */
+    align-items: stretch;
+    padding: 50px;
+    max-width: 80%;
+    margin: auto;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    position: relative;
+    min-height: auto;
+    gap: 5px;
+}
+
+.imagen {
+    max-width: 300px; /* Controla el tamaño de la imagen */
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.titulo {
+    margin-top: 5px; /* Espacio entre la imagen y el título */
+    font-size: 20px;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.item:hover .imagen {
+    transform: scale(1.05);
+}
+
+main {
+    margin-top: 100px;
+}
+
+.descripcion {
+    margin-top: 5px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    opacity: 0;
+    height: 40px;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, height 0.3s ease-in-out;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.item:hover .descripcion {
+    opacity: 1;
+    visibility: visible;
+}
+
+#contenedortres {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 15px;
+    align-content: center;
+    margin-left: 15px;
+}
+
+#logoEspacios {
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+#espacios {
+    align-self: center;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+#cuestiones {
+    height: 100px;
+    width: auto; /* Mantiene la proporción de la imagen */
+}
+
+#pequeno {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.imagen {
+    display: block;
+}
+
+#cuadricula {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Columnas adaptables */
+    gap: 15px; /* Espaciado entre elementos */
+    justify-items: center; /* Centra los elementos */
+    text-align: center; /* Asegura que el título esté centrado */
+    max-width: 90%;
+    margin: auto;
+}
+
+.itemdos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#cuadricula img {
+    width: 80px; /* Tamaño reducido */
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    margin-top: 50px;
+}
+
+#cuadricula img:hover {
+    transform: scale(1.1); /* Efecto de zoom */
+}
+
+#cuadricula h2 {
+    font-size: 14px; /* Tamaño más pequeño */
+    margin-top: 5px; /* Espacio entre imagen y título */
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+}
