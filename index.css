@@ -11,7 +11,7 @@ body {
     display: flex;
     align-items: center;  
     justify-content: space-between;
-    padding: 0 15px;  
+    padding: 0 20px;
     box-sizing: border-box; 
 }
 
@@ -197,3 +197,58 @@ main {
 
 }
 
+.texto {
+    font-size: 14px; /* Tamaño más pequeño */
+    margin-top: 5px; /* Espacio entre imagen y título */
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300
+}
+
+#dosochenta{
+    background: linear-gradient(180deg, white, 85%, rgb(48, 48, 48));
+    height: 100vh;
+}
+
+#dosochentados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.izquierda {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotos {
+    width: 50%;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.fotos:hover {
+    transform: scale(1.1);
+}
+
+.derecha {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta {
+    background-color: black;
+    padding: 30px;
+    width: 80%;
+    border-radius: 5%;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  align-items: center; 
+}
