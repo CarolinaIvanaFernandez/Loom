@@ -345,3 +345,27 @@ main {
     box-shadow: 15px 10px 20px rgba(0, 0, 0, 0.762) ;
 
 }
+
+#buscador-container {
+    display: flex;
+    justify-content: center; /* Centrar el buscador */
+    padding: 10px;
+}
+
+#buscador {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%; /* Ajustar el ancho según necesites */
+    max-width: 600px;
+}
+
+#buscador-container button {
+    padding: 8px 15px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
